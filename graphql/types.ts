@@ -12,8 +12,15 @@ const typeDefs = gql`
         Jugadores:[Jugador]
     }
 
-`;
+    type Mutation{
+        crearJugador(
+            nombre: String!,
+            apellido: String!,
+            puntaje: String!
+        ):Jugador
+    }
 
+`;
 
 
 export { typeDefs }
