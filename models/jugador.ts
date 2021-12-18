@@ -11,7 +11,6 @@ const jugadorSchema = new Schema<Jugador>({
     nombre: {
         type: String,
         required: true,
-        unique: true,
     },
     apellido: {
         type: String,
