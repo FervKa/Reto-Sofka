@@ -12,7 +12,7 @@ const resolvers = {
         crearJugador: async (parent, args) => {
             const jugadorCreado = await jugadorModel.create({
                 nombre: args.nombre,
-                apellido: args.apellido, 
+                apellido: args.apellido,
                 puntaje: args.puntaje,
             });
             return jugadorCreado;
