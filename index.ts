@@ -4,8 +4,8 @@ import { ApolloServer } from 'apollo-server-express';
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { typeDefs } from './graphql/types'
-import { resolvers } from "./graphql/resolvers";
+import { typeDefs } from './graphql/jugadores/types'
+import { resolvers } from "./graphql/jugadores/resolvers";
 
 dotenv.config();
 

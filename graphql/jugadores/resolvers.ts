@@ -1,4 +1,5 @@
-import { jugadorModel } from "../models/jugador";
+import { jugadorModel } from "../../models/jugador";
+
 
 const resolvers = {
     Query: {
