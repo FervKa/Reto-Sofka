@@ -1,7 +1,7 @@
 import { jugadorModel } from "../../models/jugador";
 
 
-const resolvers = {
+const resolversJugadores = {
     Query: {
         Jugadores: async (parent, args) => {
             const jugadores = await jugadorModel.find();
@@ -21,4 +21,4 @@ const resolvers = {
     }
 }
 
-export { resolvers }
+export { resolversJugadores }
