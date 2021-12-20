@@ -8,6 +8,7 @@ import { typeDefs } from "./graphql/types";
 import { matematicaModel } from "./models/preguntas-matematicas";
 import { resolvers } from "./graphql/resolvers";
 import { scienceModel } from "./models/preguntas-ciencia";
+import { tecnologiaModel } from "./models/tecnologia";
 
 dotenv.config();
 
@@ -56,4 +57,15 @@ app.listen({ port: process.env.PORT || 4000 }, async () => {
     respuesta_ncrr2: "En Andrómeda.",
     respuesta_ncrr3: "En Asgard."
   }) */
+
+  /* tecnologiaModel.create({
+    pregunta: "¿Qué es el Machine Learning?",
+    respuesta_correcta:
+      "Programar las máquinas para que usen algoritmos para ser capaces de aprender.",
+    respuesta_ncrr1: "Enseñar a las máquinas a hacer cosas.",
+    respuesta_ncrr2: "Es todo aquello que podemos aprender de una máquina.",
+    respuesta_ncrr3: "Es el estudio de las máquinas.",
+  }); */
+
+  
 });
