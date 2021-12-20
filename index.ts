@@ -9,6 +9,7 @@ import { matematicaModel } from "./models/preguntas-matematicas";
 import { resolvers } from "./graphql/resolvers";
 import { scienceModel } from "./models/preguntas-ciencia";
 import { tecnologiaModel } from "./models/tecnologia";
+import { cineModel } from "./models/preguntas-cine";
 
 dotenv.config();
 
@@ -66,6 +67,4 @@ app.listen({ port: process.env.PORT || 4000 }, async () => {
     respuesta_ncrr2: "Es todo aquello que podemos aprender de una máquina.",
     respuesta_ncrr3: "Es el estudio de las máquinas.",
   }); */
-
-  
 });
