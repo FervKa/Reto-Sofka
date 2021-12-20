@@ -10,6 +10,7 @@ import { resolvers } from "./graphql/resolvers";
 import { scienceModel } from "./models/preguntas-ciencia";
 import { tecnologiaModel } from "./models/tecnologia";
 import { cineModel } from "./models/preguntas-cine";
+import { culturaModel } from "./models/preguntas-cultura";
 
 dotenv.config();
 
@@ -66,5 +67,12 @@ app.listen({ port: process.env.PORT || 4000 }, async () => {
     respuesta_ncrr1: "Enseñar a las máquinas a hacer cosas.",
     respuesta_ncrr2: "Es todo aquello que podemos aprender de una máquina.",
     respuesta_ncrr3: "Es el estudio de las máquinas.",
+  }); */
+  /* culturaModel.create({
+    pregunta: "¿Cuál es el país con menos habitantes del mundo?",
+    respuesta_correcta: "La Ciudad del Vaticano.",
+    respuesta_ncrr1: "Colombia.",
+    respuesta_ncrr2: "Perú.",
+    respuesta_ncrr3: "Canadá.",
   }); */
 });

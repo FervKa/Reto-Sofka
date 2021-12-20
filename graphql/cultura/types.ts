@@ -1,7 +1,7 @@
 import { gql } from "apollo-server-express";
 
-const typeMaths = gql`
-  type Matematica {
+const typeCultura = gql`
+  type Cultura {
     _id: ID!
     pregunta: String
     respuesta_correcta: String
@@ -10,9 +10,9 @@ const typeMaths = gql`
     respuesta_ncrr3: String
   }
 
-  type Query {
-    Matematicas: [Matematica]
+  type Query{
+      Culturas: [Cultura]
   }
 `;
 
-export { typeMaths };
+export { typeCultura };
