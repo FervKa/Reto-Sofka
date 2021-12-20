@@ -1,7 +1,7 @@
 import { gql } from "apollo-server-express";
 
-const typeMaths = gql`
-  type Matematica {
+const typeScience = gql`
+  type Science {
     _id: ID!
     pregunta: String,
     respuesta_correcta: String,
@@ -11,8 +11,8 @@ const typeMaths = gql`
   }
 
   type Query {
-    Matematicas: [Matematica]
+    Sciences: [Science]
   }
 `;
 
-export { typeMaths };
+export { typeScience };
